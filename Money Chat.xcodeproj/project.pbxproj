@@ -14,6 +14,7 @@
 		F55F898D29D4C6EE006458E0 /* AIChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55F898C29D4C6EE006458E0 /* AIChatAppTests.swift */; };
 		F55F899729D4C6EE006458E0 /* AIChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55F899629D4C6EE006458E0 /* AIChatAppUITests.swift */; };
 		F55F899929D4C6EE006458E0 /* AIChatAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55F899829D4C6EE006458E0 /* AIChatAppUITestsLaunchTests.swift */; };
+		F5B7895F29D4C7A400396416 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = F5B7895E29D4C7A400396416 /* OpenAISwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F55F897829D4C6EC006458E0 /* AIChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55F897829D4C6EC006458E0 /* Money Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F897B29D4C6EC006458E0 /* AIChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatAppApp.swift; sourceTree = "<group>"; };
 		F55F897D29D4C6EC006458E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F55F897F29D4C6EE006458E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F55F898229D4C6EE006458E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F55F898829D4C6EE006458E0 /* AIChatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIChatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55F898829D4C6EE006458E0 /* Money Chat.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money Chat.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F898C29D4C6EE006458E0 /* AIChatAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatAppTests.swift; sourceTree = "<group>"; };
-		F55F899229D4C6EE006458E0 /* AIChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55F899229D4C6EE006458E0 /* Money ChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Money ChatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F899629D4C6EE006458E0 /* AIChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatAppUITests.swift; sourceTree = "<group>"; };
 		F55F899829D4C6EE006458E0 /* AIChatAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B7895F29D4C7A400396416 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,9 +86,9 @@
 		F55F897929D4C6EC006458E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F55F897829D4C6EC006458E0 /* AIChatApp.app */,
-				F55F898829D4C6EE006458E0 /* AIChatAppTests.xctest */,
-				F55F899229D4C6EE006458E0 /* AIChatAppUITests.xctest */,
+				F55F897829D4C6EC006458E0 /* Money Chat.app */,
+				F55F898829D4C6EE006458E0 /* Money Chat.xctest */,
+				F55F899229D4C6EE006458E0 /* Money ChatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F55F897729D4C6EC006458E0 /* AIChatApp */ = {
+		F55F897729D4C6EC006458E0 /* Money Chat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F55F899C29D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "AIChatApp" */;
+			buildConfigurationList = F55F899C29D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "Money Chat" */;
 			buildPhases = (
 				F55F897429D4C6EC006458E0 /* Sources */,
 				F55F897529D4C6EC006458E0 /* Frameworks */,
@@ -142,14 +144,17 @@
 			);
 			dependencies = (
 			);
-			name = AIChatApp;
+			name = "Money Chat";
+			packageProductDependencies = (
+				F5B7895E29D4C7A400396416 /* OpenAISwift */,
+			);
 			productName = AIChatApp;
-			productReference = F55F897829D4C6EC006458E0 /* AIChatApp.app */;
+			productReference = F55F897829D4C6EC006458E0 /* Money Chat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F55F898729D4C6EE006458E0 /* AIChatAppTests */ = {
+		F55F898729D4C6EE006458E0 /* Money ChatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F55F899F29D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "AIChatAppTests" */;
+			buildConfigurationList = F55F899F29D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "Money ChatTests" */;
 			buildPhases = (
 				F55F898429D4C6EE006458E0 /* Sources */,
 				F55F898529D4C6EE006458E0 /* Frameworks */,
@@ -160,14 +165,14 @@
 			dependencies = (
 				F55F898A29D4C6EE006458E0 /* PBXTargetDependency */,
 			);
-			name = AIChatAppTests;
+			name = "Money ChatTests";
 			productName = AIChatAppTests;
-			productReference = F55F898829D4C6EE006458E0 /* AIChatAppTests.xctest */;
+			productReference = F55F898829D4C6EE006458E0 /* Money Chat.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F55F899129D4C6EE006458E0 /* AIChatAppUITests */ = {
+		F55F899129D4C6EE006458E0 /* Money ChatUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F55F89A229D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "AIChatAppUITests" */;
+			buildConfigurationList = F55F89A229D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "Money ChatUITests" */;
 			buildPhases = (
 				F55F898E29D4C6EE006458E0 /* Sources */,
 				F55F898F29D4C6EE006458E0 /* Frameworks */,
@@ -178,9 +183,9 @@
 			dependencies = (
 				F55F899429D4C6EE006458E0 /* PBXTargetDependency */,
 			);
-			name = AIChatAppUITests;
+			name = "Money ChatUITests";
 			productName = AIChatAppUITests;
-			productReference = F55F899229D4C6EE006458E0 /* AIChatAppUITests.xctest */;
+			productReference = F55F899229D4C6EE006458E0 /* Money ChatUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F55F897329D4C6EC006458E0 /* Build configuration list for PBXProject "AIChatApp" */;
+			buildConfigurationList = F55F897329D4C6EC006458E0 /* Build configuration list for PBXProject "Money Chat" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,13 +220,16 @@
 				Base,
 			);
 			mainGroup = F55F896F29D4C6EC006458E0;
+			packageReferences = (
+				F5B7895D29D4C7A400396416 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = F55F897929D4C6EC006458E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F55F897729D4C6EC006458E0 /* AIChatApp */,
-				F55F898729D4C6EE006458E0 /* AIChatAppTests */,
-				F55F899129D4C6EE006458E0 /* AIChatAppUITests */,
+				F55F897729D4C6EC006458E0 /* Money Chat */,
+				F55F898729D4C6EE006458E0 /* Money ChatTests */,
+				F55F899129D4C6EE006458E0 /* Money ChatUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,12 +292,12 @@
 /* Begin PBXTargetDependency section */
 		F55F898A29D4C6EE006458E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F55F897729D4C6EC006458E0 /* AIChatApp */;
+			target = F55F897729D4C6EC006458E0 /* Money Chat */;
 			targetProxy = F55F898929D4C6EE006458E0 /* PBXContainerItemProxy */;
 		};
 		F55F899429D4C6EE006458E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F55F897729D4C6EC006458E0 /* AIChatApp */;
+			target = F55F897729D4C6EC006458E0 /* Money Chat */;
 			targetProxy = F55F899329D4C6EE006458E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -425,12 +433,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Money.AIChatApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "Money.Money-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -454,12 +463,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Money.AIChatApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "Money.Money-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -479,11 +489,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Money.AIChatAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Money Chat";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIChatApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AIChatApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Money Chat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Money Chat";
 			};
 			name = Debug;
 		};
@@ -499,11 +509,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Money.AIChatAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Money Chat";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIChatApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AIChatApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Money Chat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Money Chat";
 			};
 			name = Release;
 		};
@@ -546,7 +556,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F55F897329D4C6EC006458E0 /* Build configuration list for PBXProject "AIChatApp" */ = {
+		F55F897329D4C6EC006458E0 /* Build configuration list for PBXProject "Money Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F55F899A29D4C6EE006458E0 /* Debug */,
@@ -555,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F55F899C29D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "AIChatApp" */ = {
+		F55F899C29D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "Money Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F55F899D29D4C6EE006458E0 /* Debug */,
@@ -564,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F55F899F29D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "AIChatAppTests" */ = {
+		F55F899F29D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "Money ChatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F55F89A029D4C6EE006458E0 /* Debug */,
@@ -573,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F55F89A229D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "AIChatAppUITests" */ = {
+		F55F89A229D4C6EE006458E0 /* Build configuration list for PBXNativeTarget "Money ChatUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F55F89A329D4C6EE006458E0 /* Debug */,
@@ -583,6 +593,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5B7895D29D4C7A400396416 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5B7895E29D4C7A400396416 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5B7895D29D4C7A400396416 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F55F897029D4C6EC006458E0 /* Project object */;
 }
