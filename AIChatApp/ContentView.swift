@@ -6,6 +6,7 @@
 //
 import OpenAISwift
 import SwiftUI
+import UIKit
 
 final class ViewModel: ObservableObject {
     init() {}
@@ -17,7 +18,7 @@ final class ViewModel: ObservableObject {
     }
     func send(text: String,
               completion: @escaping (String) -> Void) {
-        client?.sendCompletion(with: text, maxTokens: 500, completionHandler: { result in switch result {
+        client?.sendCompletion(with: text, model: .gpt3(.curie), maxTokens: 500, completionHandler: { result in switch result {
         case .success(let model):
             let output = model.choices.first?.text ?? ""
             completion(output)
@@ -43,8 +44,8 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack {
-                    TextField("Chat here...", text: $text)
-                    Button("Ask!") {
+                    TextField("Ask Money!....", text: $text)
+                    Button("-->") {
                         ask()
                     }
                     
